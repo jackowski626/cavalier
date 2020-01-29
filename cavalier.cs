@@ -51,7 +51,7 @@ namespace cavalier {
                 if (x == -1) {
                     return 0;
                 }
-                if ((y-position[1] == 1 && x-position[0] == 2) || (position[1]-y == 1 && x-position[0] == 2) || (position[1]-y == 2 && x-position[0] == 1) || (position[1] - y == 2 && position[0]-x == 1) || (position[1] - y == 1 && position[0]-x == 2) || (y - position[1] == 1 && position[0]-x == 2) || (y - position[1] == 2 && x - position[0] == 1)) {
+                if ((y-position[1] == 1 && x-position[0] == 2) || (position[1]-y == 1 && x-position[0] == 2) || (position[1]-y == 2 && x-position[0] == 1) || (position[1] - y == 2 && position[0]-x == 1) || (position[1] - y == 1 && position[0]-x == 2) || (y - position[1] == 1 && position[0]-x == 2) || (y - position[1] == 2 && x - position[0] == 1) || (y - position[1] == 2 && position[0] - x == 1)) {
                     return 4;
                 } else if (table[x, y] == 1) {
                     return 2;
