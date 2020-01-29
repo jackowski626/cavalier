@@ -110,7 +110,7 @@ namespace cavalier {
                     if (!justFailed && !justEnteredCommand) {
                         printTable(damier);
                     }
-                    if (!justFailed) {
+                    if (!justFailed && !justEnteredCommand) {
                         Console.WriteLine("-------------------------");
                         Console.WriteLine("Choisissez la position initiale du cavalier. (Ex: A1)");
                         Console.WriteLine("Le cavalier est representé par 'C'");
@@ -118,7 +118,7 @@ namespace cavalier {
                     }
                     string input = Console.ReadLine();
                     if ((int)getCoords(input)[0] == -2) {
-                        justStarted = false;
+                        //justStarted = false;
                         justEnteredCommand = true;
                     } else if ((int)getCoords(input)[0] == -1) {
                         justFailed = true;
